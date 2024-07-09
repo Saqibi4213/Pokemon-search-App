@@ -19,7 +19,8 @@ const getPokemon = async () => {
     const response = await fetch(
       `https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${pokemonNameOrId}`,
     );
-    const data = await response.json(); 
+    const data = await response.json();
+     
     pokemonName.textContent = `${data.name.toUpperCase()}`;
     pokemonID.textContent = `#${data.id}`;
     weight.textContent = `Weight: ${data.weight}`;
@@ -34,24 +35,23 @@ const getPokemon = async () => {
     specialAttack.textContent = data.stats[3].base_stat;
     specialDefense.textContent = data.stats[4].base_stat;
     speed.textContent = data.stats[5].base_stat;
-
-    
+  
     types.innerHTML = data.types
       .map((obj) => `<span class="type ${obj.type.name}">${obj.type.name}</span>`)
       .join('');
   } catch (err) {
     resetDisplay();
-     // eslint-disable-next-line no-alert
+    // eslint-disable-next-line no-alert
     alert('Pokémon not found');
-    console.log(`Pokémon not found: ${err}`);
+    // eslint-disable-next-line no-console
+    console.log(`Pokemon not found: ${err}`);
   }
 };
 
 const resetDisplay = () => {
   const sprite = document.getElementById('sprite');
   if (sprite) sprite.remove();
-
-  
+ 
   pokemonName.textContent = '';
   pokemonID.textContent = '';
   types.innerHTML = '';
@@ -65,7 +65,7 @@ const resetDisplay = () => {
   speed.textContent = '';
 };
 
-searchForm.addEventListener('submit', e => {
+searchForm.addEventListener('submit', (e) => {
   e.preventDefault();
   getPokemon();
 });
