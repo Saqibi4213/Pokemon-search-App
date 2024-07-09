@@ -17,11 +17,9 @@ const getPokemon = async () => {
   try {
     const pokemonNameOrId = searchInput.value.toLowerCase();
     const response = await fetch(
-      `https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${pokemonNameOrId}`
+      `https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${pokemonNameOrId}`,
     );
-    const data = await response.json();
-
-    
+    const data = await response.json(); 
     pokemonName.textContent = `${data.name.toUpperCase()}`;
     pokemonID.textContent = `#${data.id}`;
     weight.textContent = `Weight: ${data.weight}`;
