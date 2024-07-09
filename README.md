@@ -1,14 +1,13 @@
-# Telephone-Number-Validator 🚀
+# Pokemon Search App 🚀
 
 ## Project Description 📝
 
-The Telephone Number Validator is a web-based application designed to validate telephone numbers using HTML, CSS, and JavaScript.
-This application ensures users enter valid telephone numbers in the correct format. It features a responsive design, making it accessible and functional across various devices, from desktops to mobile phones.
+The Pokemon Search App is a web application that allows users to search for and view detailed information about various Pokemon. Built with HTML, CSS, and JavaScript, this app fetches data from a Pokemon API to provide users with up-to-date information on their favorite Pokemon.
 
 ## Demo 📸
 
 
-![Demo](./phone-validator.png)
+![Demo](./pokemn.png)
 
 ## Technologies Used 🛠️
 
@@ -27,7 +26,7 @@ Ensure you have the following software installed on your machine
 #git clone
 ```
 ```bash
-#git@github.com:Saqibi4213/Telephone-Number-Validator.git
+#gitgit@github.com:Saqibi4213/Pokemon-search-App.git
 ```
 
 ## Usage 🎯
@@ -42,13 +41,12 @@ you can access to my project through git clone
 
 ## Features ⭐
 
-- User-Friendly Interface: Clean and modern design with a simple input field for entering telephone numbers.Clear and concise error messages to guide users when incorrect formats are entered.<br>
-- Real-Time Validation: Uses JavaScript to validate the telephone number as the user types.Provides immediate feedback to the user, indicating whether the entered number is valid or not.<br>
-- Responsive Design: Fully responsive layout using CSS media queries.Ensures optimal user experience on all screen sizes, from large desktop monitors to small mobile screens.<br>
-Visual Feedback: Color-coded input field borders to indicate valid (green) or invalid (red) telephone numbers.Subtle animations to enhance user interaction and experience.
+- Search Functionality: Users can search for Pokemon by name or ID.
+- Dynamic Display: The app dynamically displays information such as Pokemon images, types, abilities, and stats.   
+- Responsive Design: The app is fully responsive, ensuring a seamless experience on both desktop and mobile devices.
 
 ## Author 👩‍💻
-- Website: [website.com]( https://saqibi4213.github.io/Telephone-Number-Validator/)
+- Website: [website.com]( https://saqibi4213.github.io/Pokemon-search-App/)
 - LinkedIn: [Mehria saqibi](https://www.linkedin.com/in/mehria-saqibi-a386a41a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 - Email: [email](mosawermh@gmail.com)
 
