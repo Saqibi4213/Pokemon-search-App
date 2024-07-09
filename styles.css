@@ -38,7 +38,7 @@ h1 {
   background-color: #f5f6f7;
   border: 1px solid #f5f6f7;
   border-radius: 15px;
-  box-shadow: 10px 10px 0px 0px rgba(223, 220, 220, 0.75);
+  box-shadow: 10px 10px  rgba(223, 220, 220, 0.75);
 }
 
 .output,
@@ -59,11 +59,6 @@ label {
   align-self: center;
 }
 
-#search-input:focus-visible,
-#search-button:focus-visible {
-  outline: 3px solid #198eee;
-}
-
 #search-input {
   height: 40px;
   padding-left: 10px;
@@ -78,6 +73,11 @@ label {
   background-color: #7f21ab;
   color: #f5f6f7;
   border: none;
+}
+
+#search-input:focus-visible,
+#search-button:focus-visible {
+  outline: 3px solid #198eee;
 }
 
 .output {
@@ -146,9 +146,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  font-size: 1 rem;
+  font-size: 1rem;
   color: #f5f6f7;
   background-color: #7f21ab;
+}
+
+
+td,
+th {
+  text-align: center;
+  padding: 8px;
 }
 
 th:nth-child(even),
@@ -159,14 +166,6 @@ td:nth-child(even) {
 tr {
   border-bottom: 5px solid #f5f6f7;
 }
-
-td,
-th {
-  text-align: center;
-  padding: 8px;
-}
-
-/* Special styling for Pokémon types */
 
 .normal {
   background-color: #b7b7aa;
@@ -205,7 +204,7 @@ th {
 }
 
 .flying {
-  background-color: #8899ff;
+  background-color: #89f;
 }
 
 .psychic {
