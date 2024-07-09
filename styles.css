@@ -63,6 +63,7 @@ label {
   height: 40px;
   padding-left: 10px;
   width: 200px;
+  border-radius: 10px;
 }
 
 #search-button {
@@ -75,9 +76,18 @@ label {
   border: none;
 }
 
+button:hover {
+  box-shadow:
+    0 0 5px rgba(133, 41, 209, 0.849),
+    0 0 25px rgba(133, 41, 209, 0.849),
+    0 0 50px rgba(133, 41, 209, 0.849),
+    0 0 100px rgba(133, 41, 209, 0.849),
+    0 0 200px rgba(133, 41, 209, 0.849);
+}
+
 #search-input:focus-visible,
 #search-button:focus-visible {
-  outline: 3px solid #198eee;
+  outline: 3px solid #652dad;
 }
 
 .output {
