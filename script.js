@@ -16,7 +16,6 @@ const searchInput = document.getElementById('search-input');
 const resetDisplay = () => {
   const sprite = document.getElementById('sprite');
   if (sprite) sprite.remove();
- 
   pokemonName.textContent = '';
   pokemonID.textContent = '';
   types.innerHTML = '';
@@ -45,7 +44,6 @@ const getPokemon = async () => {
     spriteContainer.innerHTML = `
       <img id="sprite" src="${data.sprites.front_default}" alt="${data.name} front default sprite">
     `;
- 
     hp.textContent = data.stats[0].base_stat;
     attack.textContent = data.stats[1].base_stat;
     defense.textContent = data.stats[2].base_stat;
@@ -53,9 +51,7 @@ const getPokemon = async () => {
     specialDefense.textContent = data.stats[4].base_stat;
     speed.textContent = data.stats[5].base_stat;
   
-    types.innerHTML = data.types
-      .map((obj) => `<span class="type ${obj.type.name}">${obj.type.name}</span>`)
-      .join('');
+    types.innerHTML = data.types.map((obj) => `<span class="type ${obj.type.name}">${obj.type.name}</span>`).join('');
   } catch (err) {
     resetDisplay();
     // eslint-disable-next-line no-alert
